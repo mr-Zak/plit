@@ -1,0 +1,122 @@
+.price
+    padding: 50px 0
+    background-color: #ece5e5
+    display: grid
+    grid-template-rows: 10% 90%
+    grid-template-columns: 60% 40%
+    &__title
+        grid-column-start: 1
+        grid-column-end: 3
+        width: 100%
+        margin: 0 auto
+        font-family: 'Oswald', sans-serif
+        text-align: center
+        padding: 25px 0
+        font-size: 40px
+        border-top: 1px solid rgba(0, 0, 0, 0.5)
+    &-box
+        width: 65%
+        vertical-align: middle
+    &__subtitle
+        width: 100%
+        padding: 35px 0
+        text-align: center
+        font-family: 'Oswald', sans-serif
+        font-style: italic
+        font-size: 38px
+        margin: 0                  
+    &-formbox
+        width: 100%
+        &__subtitle
+            font-family: 'Oswald', sans-serif
+            font-size: 26px
+            display: block
+            padding: 30px 0
+        &__form
+            margin-top: 30px
+            width: 80%
+            background-color: #ffffff
+            border-radius: 10px
+            text-align: center
+            padding: 20px 0
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.9)
+        &__user
+            width: 80%
+            margin: 17px 0
+            padding: 15px
+            font-family: sans-serif
+            font-size: 24px
+            border-radius: 10px
+        &__message
+            width: 80%
+            margin: 17px 0
+            padding: 15px
+            font-family: sans-serif
+            font-size: 24px
+            border-radius: 10px
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.3)
+        &__button
+            display: block
+            padding: 15px 20px
+            border-radius: 5px
+            border: none
+            background: rgb(109, 219, 124)
+            font-size: 20px
+            margin: 0 auto
+            &:active
+                background: #000000
+                color: #ffffff
+input
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3)
+strong
+    font-size: 44px
+    color: red
+@media ( max-width:  1390px)
+    .price__subtitle
+        font-size: 30px
+    
+@media ( max-width: 1200px )
+    .price-formbox__form
+        width: 100%
+    strong
+        font-size: 38px
+@media ( max-width: 1000px )
+    .price
+        grid-template-columns: 50% 50%
+        &__subtitle
+            padding: 20px 0
+            font-size: 20px
+        &-formbox__user
+            font-size: 18px
+            padding: 10px
+            margin: 10px 0
+        &-formbox__subtitle
+            font-size: 22px
+            padding: 10px 0
+        &-formbox__message
+            margin: 10px 0
+            font-size: 18px
+            padding: 10px
+
+    strong
+        font-size: 28px
+    
+@media ( max-width: 800px )
+    .price
+        display: block
+        &-box
+            width: 100%
+        &-formbox__form
+            width: 70%
+            margin: 0 auto
+
+@media ( max-width: 768px )
+    .price__title
+        font-size: 34px
+    strong
+        font-size: 22px
+@media ( max-width: 540px )
+    .price-formbox__form
+        width: 100%
+    .price__title
+        font-size: 28px

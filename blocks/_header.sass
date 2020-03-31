@@ -1,0 +1,57 @@
+.header
+    width: 100%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 50% 50%
+    &-logo
+        display: flex
+        align-items: center
+        &__logo
+            width: 40%
+            display: block
+    &-contacts
+        width: 100%
+        font-style: normal
+        &__address
+            width: 100%
+            display: block
+            padding: 3px
+            font-family: 'Oswald', sans-serif;
+            font-size: 28px
+        &__phone
+            width: 100%
+            padding: 3px
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px
+            display: block
+        &__maplink
+            color: rgb(185, 87, 8)
+            text-decoration: none
+            font-family: 'Oswald', sans-serif
+            font-size: 18px
+            border-radius: 5px
+            &:hover
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.3)
+                background: rgb(4, 100, 84)
+                color: #ffffff
+        
+@media ( max-width: 1112px )
+    .header-contacts__phone
+        font-size: 20px
+@media ( max-width: 1000px )
+    .header-contacts__address
+        font-size: 22px
+    .header-contacts__phone
+        font-size: 18px
+@media ( max-width: 800px )
+    .header-contacts__address
+        font-size: 20px
+@media ( max-width: 768px )
+    .header
+        display: block
+        &-logo
+            display: block
+            &__logo
+                margin: 0 auto
+        &-contacts
+            text-align: center

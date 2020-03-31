@@ -1,0 +1,65 @@
+.services
+    padding: 45px 0
+    background-color: #ece5e5
+    &__title
+        width: 100%
+        margin: 0 auto
+        font-family: 'Oswald', sans-serif
+        text-align: center
+        padding: 25px 0
+        font-size: 40px
+        border-top: 1px solid rgba(0, 0, 0, 0.5)
+    &-options
+        width: 100%
+        margin: 0 auto
+        display: grid
+        grid-template-columns: 24% 24% 24% 24%
+        grid-column-gap: 1%
+        overflow: hidden
+        &-option
+            max-width: 300px
+            margin-bottom: 5px
+            &__title
+                font-family: 'Oswald', sans-serif
+                font-size: 26px
+                text-align: center
+            &__image
+                display: block
+                width: 100%
+                height: 270px
+                margin: 0 auto
+            &__info
+                display: none
+                height: 270px
+                font-family: 'Oswald', sans-serif
+                font-size: 24px
+                margin: 0
+                overflow-y: auto
+            &:hover
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.9)
+                .services-options-option__image
+                    display: none
+                .services-options-option__info
+                    display: block
+
+@media ( max-width: 1390px )
+    .services-options
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        grid-gap: 1%
+        &-option
+            margin: 0 auto
+            &__title
+                margin: 10px 0
+@media ( max-width: 1000px )
+    .services-options-option__title
+        font-size: 20px
+
+@media ( max-width: 768px )
+    .services__title
+        font-size: 34px
+    .services-options
+        display: block
+@media ( max-width: 768px )
+    .services__title
+        font-size: 28px

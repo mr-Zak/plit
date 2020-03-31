@@ -1,0 +1,87 @@
+.footer
+    background-image: linear-gradient( rgba(47, 46, 46, 0.6), rgba(0, 0, 0, 0.6) ), url(../image/footer/background_4.jpg)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    display: grid
+    grid-template-columns: 2fr 1fr
+    grid-template-rows: 1fr 2fr
+    grid-gap: 1%
+    padding-bottom: 30px
+    &__title
+        grid-column-start: 1
+        grid-column-end: 3
+        font-family: 'Oswald', sans-serif
+        font-size: 30px
+        font-style: normal
+        text-align: center
+        padding: 15px 0
+        color: rgb(212, 212, 212)
+    &-contacts
+        width: 100%
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        margin-left: 20px
+        &-addresbox
+            & a:hover
+                color: #e07a05
+            &__subtitle
+                display: block
+                font-family: 'Oswald', sans-serif
+                text-align: center
+                font-size: 24px
+                padding: 10px
+                color: rgb(224, 224, 224)
+                text-align: center
+            &__contact
+                font-family: 'Oswald', sans-serif
+                font-size: 18px
+                display: block
+                padding-bottom: 10px
+                color: rgb(236, 236, 236)
+                text-align: center
+                & a:hover
+                    color: #e07a05
+    &-socialnetwork
+        text-align: center
+        &__title
+            display: block
+            font-family: 'Oswald', sans-serif
+            text-align: center
+            font-size: 24px
+            padding: 10px
+            color: rgb(224, 224, 224)
+            text-align: center
+        &__link
+            margin: 0 10px
+        &__link img
+            text-align: center
+            width: 64px
+            background: rgb(187, 3, 3)
+            border-radius: 15px
+            &:hover
+                box-shadow: 5px 5px 10px #fd3b3be6
+
+@media ( max-width: 768px )
+    .footer-contacts-addresbox__subtitle
+        font-size: 20px
+    .footer-contacts-addresbox__contact
+        font-size: 14px
+    .footer-socialnetwork__title
+        font-size: 20px
+    .footer-socialnetwork__link img
+        width: 44px
+        border-radius: 10px
+@media ( max-width: 540px )
+    .footer
+        display: block
+        text-align: center
+        &__title
+            margin: 0 auto  
+        &-contacts
+            display: block
+            margin: 0
+    .footer-contacts-addresbox
+        width: 100%
+    .footer-contacts-addresbox__subtitle
+        padding: 0px

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blocks/style.css">
+</head>
+<body>
+   <div class="container">
+       <!--Шапка-->
+       <header class="header">
+           <!--Контейнер для лого-->
+           <div class="header-logo">
+               <img src="image/header/logo_4.png" alt="Logo" class="header-logo__logo">
+           </div>
+           <!--Контакты-->
+           <address class="header-contacts">
+               <span class="header-contacts__address">г.Ижевск, ГСК "Восток", ул. 12, бокс №1</span>
+               <a href="#map" class="header-contacts__maplink">посмотреть на карте</a>
+               <span class="header-contacts__phone">Тел: +7-912-888-77-66 или +7-999-888-77-66</span>
+               <!--<span class="header-contacts__phone">email: <a href="rezkaplitki18@mail.ru">rezkaplitki18@mail.ru</a></span>-->
+           </address>
+       </header>
+   </div>
+       <!--Основная информация-->
+       <main class="main">
+           <h1 class="main__title">Резка плитки и керамогранита без сколов<br> в Ижевске</h1>
+       </main>
+    <div class="container">
+       <!--Информация о услугах-->
+       <section class="services">
+            <h2 class="services__title">НАШИ УСЛУГИ</h2>
+            <!--Контейнер группы услуг-->
+            <div class="services-options">
+                <!--Контейнер для описания № 1-->
+                <div class="services-options-option">
+                    <h3 class="services-options-option__title">Прямая резка</h3>
+                    <img src="image/services/rezka.jpg" alt="" class="services-options-option__image">
+                    <p class="services-options-option__info">- без сколов: выполняется на профессиональном оборудовании;<br>
+                        - каждый рез дополнительно обрабатвается и полируется;<br>
+                        - снятие фасок в подарок;<br>
+                        - рез плитки и керамогранита по диагонали.</p>
+                </div>
+                <!--Контейнер для описания № 2-->
+                <div class="services-options-option">
+                    <h3 class="services-options-option__title">Резка под углом 45 градусов</h3>
+                    <img src="image/services/fascka45.jpg" alt="" class="services-options-option__image">
+                    <p class="services-options-option__info">- отличное решение для оформления угла: смотрится дорого и эстетично;<br>
+                        - не нужны пластиковые уголки-наличники, которые «удешевляют» работу;<br>
+                        - не нужно искать уголок в цвет плитки.</p>
+                </div>
+                <!--Контейнер для описания № 3-->
+                <div class="services-options-option">
+                    <h3 class="services-options-option__title">Фальшмозаика</h3>
+                    <img src="image/services/mozaika.jpg" alt="" class="services-options-option__image">
+                    <p class="services-options-option__info">- декоративный пропил выполняется не на всю глубину плитки;<br>
+                        - после затирки сложно отличить от классическо мозаики;<br>
+                        - дешевле, чем классическая мозаика.</p>
+                </div>
+                <!--Контейнер для описания № 4-->
+                <div class="services-options-option">
+                    <h3 class="services-options-option__title">Резка ступеней и плинтусов</h3>
+                    <img src="image/services/rezka.jpg" alt="" class="services-options-option__image">
+                    <p class="services-options-option__info">- эстетично: плинтус и ступени из той же плитки, которой выложен пол;<br>
+                        - загругление края плинтуса облегчает уборку;<br> - закругление края ступени;<br>
+                        - возможно нанесениеантискользящих полос.
+                    </p>
+                </div>
+            </div>
+       </section>
+       <!--Цены на услуги-->
+       <section class="price">
+           <h4 class="price__title">ЦЕНЫ</h4>
+           <!--Бокс с ценами-->
+           <div class="price-box">
+                <h5 class="price__subtitle">Прямой рез - <strong>120 руб/м.п.</strong></h5>
+                <h5 class="price__subtitle">Снятие фаски под углом 45 градусов - <strong>120 руб/м.п.</strong></h5>
+                <h5 class="price__subtitle">Изготовление плинтусов из керамогранита - <strong>280 руб/м.п.</strong></h5>
+                <h5 class="price__subtitle">Изготовление ступеней из керамогранита - <strong>280 руб/м.п.</strong></h5>
+            </div>
+            <!--Бокс с формой обратной связи-->
+            <div class="price-formbox">
+                <form class="price-formbox__form" action="php/mail.php" method="POST">
+                    <span class="price-formbox__subtitle">Оформить заказ</span>
+                    <input type="text" class="price-formbox__user" placeholder="Имя" name="name" required>
+                    <input type="text" class="price-formbox__user" placeholder="Телефон" name="phone" required>
+                    <input type="text" class="price-formbox__user" placeholder="Email" name="email">
+                    <textarea class="price-formbox__message" name="message" id="message" cols="30" rows="3" placeholder="Сообщение"></textarea>
+                    <input type="submit" class="price-formbox__button">
+                </form>
+            </div>
+       </section>
+       <section class="map">
+           <h6 class="map__title">ГДЕ МЫ НАХОДИМСЯ</h6>
+           <div class="map-box" id="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2f7f06acd1ca9e3f6220ef10e03afef66711bfae56be87759c153da4ca0fccdd&amp;width=100%&amp;lang=ru_RU&amp;scroll=true"></script></div>
+       </section>
+    </div> 
+    <footer class="footer">
+        <span class="footer__title">Наши контакты</span>
+        <address class="footer-contacts">
+            <div class="footer-contacts-addresbox">
+                <span class="footer-contacts-addresbox__subtitle">Адрес:</span>
+                <span class="footer-contacts-addresbox__contact">г.Ижевск, ГК "Восток", ул. 12, бокс №1</span>
+            </div>
+            <div class="footer-contacts-addresbox">
+                <span class="footer-contacts-addresbox__subtitle">Телефон:</span>
+                <span class="footer-contacts-addresbox__contact">+7-999-888-77-66 <br> +7-912-888-77-66</span>
+            </div>
+            <div class="footer-contacts-addresbox">
+                <span class="footer-contacts-addresbox__subtitle">Email:</span>
+                <a href="#" class="footer-contacts-addresbox__contact">rezkaplitki18@mail.ru</a>
+            </div>
+        </address>
+        <div class="footer-socialnetwork">
+            <span class="footer-socialnetwork__title">Мы в соцсетях</span>
+            <a href="#" class="footer-socialnetwork__link"><img src="image/footer/vk-icon.png" alt="Vk"></a>
+            <a href="#" class="footer-socialnetwork__link"><img src="image/footer/yt.png" alt="YouTube"></a>
+        </div>
+    </footer>
+</body>
+</html>
